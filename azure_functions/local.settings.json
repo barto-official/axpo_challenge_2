@@ -1,0 +1,14 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    "AzureWebJobsFeatureFlags": "EnableWorkerIndexing",
+    "AzureWebJobsStorage": "",
+    "EVENT_HUB_CONNECTION_STR": YOUR CONNECTION STRING,
+    "EVENT_HUB_NAME": YOUR EVENTHUB NAME,
+    "MYSQL_USER": MYSQL USER,
+    "MYSQL_PASSWORD": PASSWORD,
+    "MYSQL_HOST": HOST,
+    "MYSQL_DATABASE": DATABASE,
+  }
+}
