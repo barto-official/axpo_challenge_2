@@ -40,14 +40,14 @@ Components
 
 
 **Why this architecture and technologies? There are three main reasons:**
-    * Minimization of Costs as it was just a proof of concept.
-    * Time Constraints 
-    * Effectiveness of the System despite the constraints. 
+- Minimization of Costs as it was just a proof of concept.
+- Time Constraints
+- Effectiveness of the System despite the constraints. 
 
 **What should be done differently at this stage:**
-    * Use MQTT protocol instead of sending data in JSON format
-    * Use Microsoft Azure Eventgrid instead of Azure Eventhub to ingest data 
-    * Create Pipeline using Azure Data Factory rather than Azure Functions if possible
+- Use MQTT protocol instead of sending data in JSON format
+- Use Microsoft Azure Eventgrid instead of Azure Eventhub to ingest data 
+- Create Pipeline using Azure Data Factory rather than Azure Functions if possible
 
 
 **Ideal Architecture**
