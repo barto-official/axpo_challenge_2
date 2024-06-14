@@ -16,7 +16,7 @@ class Sensor:
     async def generate(self, client: EventHubProducerClient, topic: str):
         while True:
             data = {
-                "sensor_id": self.id,
+                "sensor_id": int(self.id),
                 "timestamp": datetime.datetime.utcnow().isoformat(),
                 "value": random.randint(*self.range),
                 "metadata": {
