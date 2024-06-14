@@ -1,0 +1,5 @@
+paho-mqtt
+pydantic
+pydantic-settings
+mysql-connector-python
+azure-eventhub
