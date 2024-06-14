@@ -1,5 +1,5 @@
 from fastapi import FastAPI, HTTPException, Query, Depends
-from sqlalchemy import create_engine, Column, Integer, Float, DateTime
+from sqlalchemy import create_engine, Column, Integer, Float, DateTime, String
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, Session
 import os
@@ -67,6 +67,13 @@ def get_db():
         yield db
     finally:
         db.close()
+
+@app.get("/")
+def read_root():
+    """
+    Root endpoint to check if the API is up and running.
+    """
+    return "API is up and running. Query results or go to '/docs/' for documentation."
 
 
 @app.get("/data/", response_model=List[SensorDataModel])
